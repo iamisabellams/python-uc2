@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Estrutura HTML5</title>
+    <meta name="description" content="Uma página de exemplo para demonstrar a estrutura básica do HTML5.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body{
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0px;
+            padding: 20px;
+            background: linear-gradient(135deg, #62b3ff, #6b94af, #c3d8ff );
+            min-height: 100vh;
+        }
+
+        h1{
+            color: rgb(143, 123, 8);
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        p{
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .caixa{
+            background-color: white;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        img.w800{
+            width:450px;
+        }
+
+        img.h800{
+            height:800px;
+        }
+
+        img.w300-redonda{
+            width: 300px;
+            height: auto;
+            clip-path: circle(40%);
+        }
+
+        img.wmax{
+            max-width: 100%;
+            height: auto;
+        }
+
+        figure{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 20px;
+            border: 2px dotted black;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aula 02 - Imagens - Parte 01</h1>
+
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <h2>Seção 1: Introdução</h2>
+
+            <p>Esta é a primeira seção da págia <br>
+            Aqui você pode adicionar informações <br>
+            introdutórias.</p>
+
+            <div class="caixa">
+                Conteúdo Formatado  
+            </div>
+        </section>
+
+        <section id="section1">
+            <h2>Imagem Original</h2>
+            <img src="img/paisagem-original.jpg" 
+                alt="Um lindo por do sol."
+                width="800px"
+                >
+        </section>
+
+        <section id="section2">
+            <h2>Imagem com 300px de largura</h2>
+            <img src="img/paisagem-original.jpg" 
+                alt="Um lindo por do sol."
+                class="w800"
+                >
+        </section>
+
+        <figure>
+            <img src="img/paisagem-original.jpg"
+            alt="Por do sol"
+            class="w300"
+            height="800px"
+            >
+            <figcaption>
+                Paisagem - Imagem Original
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/paisagem-original.jpg"
+            alt="Por do sol"
+            class="wmax"
+            >
+            <figcaption>
+                Paisagem - Imagem Original
+            </figcaption>
+        </figure>
+
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
