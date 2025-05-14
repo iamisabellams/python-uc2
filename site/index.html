@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludix</title>
+    <meta name="description" content="A Ludix oferece os melhores jogos e acessórios para gamers">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  
+    <style>
+        body {
+            padding-top: 70px;
+            padding-bottom: 60px;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Barra de navegação */
+        .barra-navegacao {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background-color: white !important;
+        }
+        
+        .logo-empresa {
+            height: 40px;
+            margin-right: 15px;
+        }
+        
+        /* Conteúdo principal */
+        .conteudo-principal {
+            padding: 2rem 0;
+        }
+        
+        /* Cards de produto */
+        .card-produto {
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            margin-bottom: 1.5rem;
+            border: none;
+        }
+        
+        .card-produto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .corpo-card {
+            padding: 1.2rem;
+        }
+        
+        .titulo-card {
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+            color: #212529;
+        }
+        
+        .botao-ver-produto {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.85rem;
+        }
+        
+        /* Títulos de seção */
+        .titulo-secao {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #dee2e6;
+        }
+        
+        /* Rodapé */
+        .rodape {
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            background-color: #212529 !important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top barra-navegacao">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/mushroom.png" alt="Ludix" class="logo-empresa">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown" role="button" data-bs-toggle="dropdown">
+                            Jogos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">The Last of Us Parte I</a></li>
+                            <li><a class="dropdown-item" href="#">The Last of Us Parte II</a></li>
+                            <li><a class="dropdown-item" href="#">Resident Evil 4</a></li>
+                            <li><a class="dropdown-item" href="#">GTA 5</a></li>
+                            <li><a class="dropdown-item" href="#">Red Redemption</a></li>
+                            <li><a class="dropdown-item" href="#">God of War Ragnarök</a></li>
+                            <li><a class="dropdown-item" href="#">Life Is Strange</a></li>
+                            <li><a class="dropdown-item" href="#">Minecraft: Java Edition</a></li>
+                            <li><a class="dropdown-item" href="#">Super Mario World</a></li>
+                            <li><a class="dropdown-item" href="#">Resident Evil 6</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                </ul>
+                
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Pesquisar...">
+                        <button class="btn btn-outline-primary" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="conteudo-principal">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1>Bem-vindo à Ludix!</h1>
+                <p class="lead">Explore o universo da Ludix! Aqui você encontra os melhores jogos, acessórios e novidades do mundo gamer.</p>
+            </div>
+            
+            <section>
+                <h2 class="titulo-secao text-center">Mais Vendidos</h2>
+                <div class="row g-4 justify-content-center">
+                    <!-- The Last of Us Parte I -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card card-produto h-100">
+                            <div class="container-imagem-card">
+                                <img src="img/716wDmHJYLL._AC_SL1500_.jpg" class="card-img-top" alt="The Last of Us Parte I">
+                            </div>
+                            <div class="corpo-card">
+                                <h5 class="titulo-card">The Last of Us Parte I</h5>
+                                <button type="button" class="btn btn-outline-primary botao-ver-produto">
+                                    <i class="bi bi-eye me-1"></i>Ver Produto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- The Last of Us Parte II -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card card-produto h-100">
+                            <div class="container-imagem-card">
+                                <img src="img/thelastofusIIps5.jpg" class="card-img-top" alt="The Last of Us Parte II">
+                            </div>
+                            <div class="corpo-card">
+                                <h5 class="titulo-card">The Last of Us Parte II</h5>
+                                <button type="button" class="btn btn-outline-primary botao-ver-produto">
+                                    <i class="bi bi-eye me-1"></i>Ver Produto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Resident Evil 4 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="card card-produto h-100">
+                            <div class="container-imagem-card">
+                                <img src="img/residentEvil4.jpg" class="card-img-top" alt="Resident Evil 4">
+                            </div>
+                            <div class="corpo-card">
+                                <h5 class="titulo-card">Resident Evil 4</h5>
+                                <button type="button" class="btn btn-outline-primary botao-ver-produto">
+                                    <i class="bi bi-eye me-1"></i>Ver Produto
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="navbar navbar-expand navbar-dark rodape fixed-bottom">
+        <div class="container">
+            <span class="navbar-text me-auto">
+                &copy; 2025 Ludix - Todos os direitos reservados.
+            </span>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Termos de Uso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Política de Privacidade</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

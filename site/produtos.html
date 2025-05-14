@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ludix - Catálogo de Jogos</title>
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            padding-top: 70px;
+            padding-bottom: 60px;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Barra de navegação */
+        .barra-navegacao {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background-color: white !important;
+        }
+        
+        .logo-empresa {
+            height: 40px;
+            margin-right: 15px;
+        }
+        
+        /* Conteúdo principal */
+        .conteudo-principal {
+            padding: 2rem 0;
+        }
+        
+        /* Estilização da tabela */
+        .tabela-catalogo {
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .tabela-catalogo thead {
+            background-color: #212529;
+            color: white;
+        }
+        
+        .tabela-catalogo th {
+            padding: 1rem;
+            font-weight: 500;
+        }
+        
+        .tabela-catalogo td {
+            padding: 1rem;
+            vertical-align: middle;
+        }
+        
+        .tabela-catalogo tr:hover {
+            background-color: rgba(0,0,0,0.02);
+        }
+
+        .titulo-jogo {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 0.5rem;
+        }
+        
+        .info-jogo {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+        
+        .preco {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #28a745;
+        }
+        
+        .preco-antigo {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+        
+        .botao-comprar {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+        
+        /* Rodapé */
+        .rodape {
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            background-color: #212529 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top barra-navegacao">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/mushroom.png" alt="Ludix" class="logo-empresa">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown" role="button" data-bs-toggle="dropdown">
+                            Jogos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">The Last of Us Parte I</a></li>
+                            <li><a class="dropdown-item" href="#">The Last of Us Parte II</a></li>
+                            <li><a class="dropdown-item" href="#">Resident Evil 4</a></li>
+                            <li><a class="dropdown-item" href="#">GTA 5</a></li>
+                            <li><a class="dropdown-item" href="#">Red Redemption 2</a></li>
+                            <li><a class="dropdown-item" href="#">God of War Ragnarök</a></li>
+                            <li><a class="dropdown-item" href="#">Life Is Strange</a></li>
+                            <li><a class="dropdown-item" href="#">Minecraft: Java Edition</a></li>
+                            <li><a class="dropdown-item" href="#">Super Mario World</a></li>
+                            <li><a class="dropdown-item" href="#">Resident Evil 6</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                </ul>
+                
+                <form class="d-flex">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Pesquisar...">
+                        <button class="btn btn-outline-primary" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="conteudo-principal">
+        <div class="container">
+            <h1 class="mb-4">Jogos em Promoção!</h1>
+            
+            <div class="table-responsive">
+                <table class="table tabela-catalogo">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 15%">Foto</th>
+                            <th scope="col" style="width: 55%">Descrição</th>
+                            <th scope="col" style="width: 30%">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Item 1 -->
+                        <tr>
+                            <td>
+                                <img src="img/716wDmHJYLL._AC_SL1500_.jpg" 
+                                     class="img-thumbnail imagem-jogo" 
+                                     alt="The Last of Us Parte I">
+                            </td>
+                            <td>
+                                <h5 class="titulo-jogo">The Last of Us Parte I</h5>
+                                <ul class="list-unstyled info-jogo">
+                                    <li><small>2 set. 2022</small></li>
+                                    <li><small>Mais de 800 compras no mês passado</small></li>
+                                    <li><span class="badge bg-success">Disponível</span></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="preco">R$ 89,90</span>
+                                <del class="preco-antigo d-block">R$ 199,90</del>
+                                <button type="button" class="btn btn-outline-success botao-comprar">
+                                    <i class="bi bi-cart-plus me-1"></i>Comprar
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Item 2 -->
+                        <tr>
+                            <td>
+                                <img src="img/thelastofusIIps5.jpg" 
+                                     class="img-thumbnail imagem-jogo" 
+                                     alt="The Last of Us Parte II">
+                            </td>
+                            <td>
+                                <h5 class="titulo-jogo">The Last of Us Parte II</h5>
+                                <ul class="list-unstyled info-jogo">
+                                    <li><small>19 jun. 2020</small></li>
+                                    <li><small>Mais de 50 compras no mês passado</small></li>
+                                    <li><span class="badge bg-success">Disponível</span></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="preco">R$ 299,90</span>
+                                <small class="text-muted d-block">ou 10x R$ 29,99</small>
+                                <button type="button" class="btn btn-outline-success botao-comprar">
+                                    <i class="bi bi-cart-plus me-1"></i>Comprar
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Item 3 -->
+                        <tr>
+                            <td>
+                                <img src="img/residentEvil4.jpg" 
+                                     class="img-thumbnail imagem-jogo" 
+                                     alt="Resident Evil 4">
+                            </td>
+                            <td>
+                                <h5 class="titulo-jogo">Resident Evil 4</h5>
+                                <ul class="list-unstyled info-jogo">
+                                    <li><small>24 mar. 2023</small></li>
+                                    <li><small>Mais de 100 compras no mês passado</small></li>
+                                    <li><span class="badge bg-success">Disponível</span></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="preco">R$ 179,90</span>
+                                <del class="preco-antigo d-block">R$ 200,00</del>
+                                <button type="button" class="btn btn-outline-success botao-comprar">
+                                    <i class="bi bi-cart-plus me-1"></i>Comprar
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="img/718md8Ry+IL._AC_SX342_SY445_.jpg" 
+                                     class="img-thumbnail imagem-jogo" 
+                                     alt="The Last of Us Parte I">
+                            </td>
+                            <td>
+                                <h5 class="titulo-jogo">GTA 5</h5>
+                                <ul class="list-unstyled info-jogo">
+                                    <li><small>17 set. 2013</small></li>
+                                    <li><small>Mais de 1.500 compras no mês passado</small></li>
+                                    <li><span class="badge bg-success">Disponível</span></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="preco">R$ 89,90</span>
+                                <del class="preco-antigo d-block">R$ 100,90</del>
+                                <button type="button" class="btn btn-outline-success botao-comprar">
+                                    <i class="bi bi-cart-plus me-1"></i>Comprar
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="img/61oZz+Y9svL._AC_SX342_.jpg" 
+                                     class="img-thumbnail imagem-jogo" 
+                                     alt="The Last of Us Parte I">
+                            </td>
+                            <td>
+                                <h5 class="titulo-jogo">Red Dead Redemption</h5>
+                                <ul class="list-unstyled info-jogo">
+                                    <li><small>2 out. 2021</small></li>
+                                    <li><small>Mais de 540 compras no mês passado</small></li>
+                                    <li><span class="badge bg-success">Disponível</span></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="preco">R$ 189,89</span>
+                                <del class="preco-antigo d-block">R$ 249,90</del>
+                                <button type="button" class="btn btn-outline-success botao-comprar">
+                                    <i class="bi bi-cart-plus me-1"></i>Comprar
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="navbar navbar-expand navbar-dark rodape fixed-bottom">
+        <div class="container">
+            <span class="navbar-text me-auto">
+                &copy; 2025 Ludix - Todos os direitos reservados.
+            </span>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Termos de Uso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Política de Privacidade</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
