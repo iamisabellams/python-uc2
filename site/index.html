@@ -39,7 +39,7 @@
         /* Cards de produto */
         .card-produto {
             border-radius: 8px;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 15px rgba(255, 255, 255, 0.05);
             transition: all 0.3s ease;
             margin-bottom: 1.5rem;
             border: none;
@@ -73,6 +73,50 @@
             border-bottom: 2px solid #dee2e6;
         }
         
+        /* Seção Promoção */
+        .secao-promocao {
+            padding: 4rem 0;
+            margin-top: 2rem;
+        }
+        
+        .card-promocao {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            position: relative;
+            background-color: #f0f0f0; /* Fundo levemente acinzentado */
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease; /* Adicionando transição para a animação */
+        }
+        
+        .card-promocao:hover {
+            transform: translateY(-5px); /* Mesma animação dos cards de jogos */
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .conteudo-promocao {
+            padding: 3rem;
+            max-width: 600px;
+            color: #000; /* Texto em preto */
+        }
+        
+        .titulo-promocao {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #000; /* Texto em preto */
+        }
+        
+        .texto-promocao {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            color: #000; /* Texto em preto */
+        }
+
         /* Rodapé */
         .rodape {
             box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
@@ -86,7 +130,7 @@
     <!-- Barra de navegação -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top barra-navegacao">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="img/mushroom.png" alt="Ludix" class="logo-empresa">
             </a>
             
@@ -192,10 +236,12 @@
                                 <img src="img/thelastofusIIps5.jpg" class="card-img-top" alt="The Last of Us Parte II">
                             </div>
                             <div class="corpo-card">
-                                <h5 class="titulo-card">The Last of Us Parte II</h5>
-                                <button type="button" class="btn btn-outline-primary botao-ver-produto">
-                                    <i class="bi bi-eye me-1"></i>Ver Produto
-                                </button>
+                                <h5 class="titulo-card">The Last of Us Parte II - Remaster</h5>
+                                <a class="btn btn-outline-primary botao-ver-produto"
+                                    href="#">
+                                    <i class="bi bi-eye me-1" ></i>
+                                    Ver Produto
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -208,24 +254,38 @@
                             </div>
                             <div class="corpo-card">
                                 <h5 class="titulo-card">Resident Evil 4</h5>
-                                <button type="button" class="btn btn-outline-primary botao-ver-produto">
-                                    <i class="bi bi-eye me-1"></i>Ver Produto
-                                </button>
+                                <a class="btn btn-outline-primary botao-ver-produto"
+                                    href="#">
+                                    <i class="bi bi-eye me-1" ></i>
+                                    Ver Produto
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <h2 class="titulo-secao text-center mt-5"></h2>
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h1>Produtos em Promoção</h1>
-                    <p class="lead">Na nossa loja, também fornecemos a melhor das experiências não apenas 
-                        na qualidade, mas no seu investimento, tornando-se acessível sempre!
-                    </p>
-                </div>
         </div>
+        <section class="secao-promocao">
+        <div class="container">
+            <div class="card card-promocao">
+                <div class="conteudo-promocao">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h1>Produtos em Promoção</h1>
+                            <p class="lead">Na nossa loja, também fornecemos a melhor das experiências não apenas 
+                                na qualidade, mas no seu investimento, tornando-se acessível sempre!
+                            </p>
+                            <a class="btn btn-outline-dark botao-ver-produto"
+                            href="produtos.html">
+                            <i class="bi bi-eye me-1" ></i>
+                                Promoções
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
 
     <!-- Rodapé -->
